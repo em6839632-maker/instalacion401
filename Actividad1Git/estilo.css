@@ -1,0 +1,184 @@
+*{box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(85, 0, 255);
+    color: #FFF6DC;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+    padding: 20px;
+    line-height: 1.5;
+}
+#menu{
+    background-color: rgb(34, 0, 128);
+    color: black;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 5px rgb(48, 2, 66) dotted;
+    border-radius: 5px;
+}
+#menu nav ol {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+#menu nav ol li{
+    padding-bottom: 60%;
+    padding-top: 60%;
+}
+#menu nav ol li a{
+    color: black;
+    text-decoration: none;
+}
+#menu nav ol li a:hover{
+    background-color: rgb(7, 50, 192);
+    color: black;
+    font-size: 16px;
+    border-radius: 5px;
+}
+main{
+    height: 66.66%;
+    display: flex;
+    flex-direction: row;
+}
+#general{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 5px rgb(48, 2, 66) dotted;
+}
+.renglones{
+    display: flex;
+    flex-direction: row;
+}
+.renglones article{
+    width: 25%;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+#parte2{
+    display: flex;
+    flex-direction: row;
+    
+}
+#parte2 .cuadros{
+    color: black;
+    width: 33.33%;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    border: 5px rgb(48, 2, 66) dotted
+}
+
+#dos{
+    display: flex;
+    flex-direction: row;
+}
+
+#img1{
+    height: 200px;
+    background-image: url('img/imgjunior.jpg');
+    background-size: cover;
+    border-radius: 15px;
+    border: 5px rgb(48, 2, 66) dotted;
+}
+#grad1{
+    height: 200px;
+    background-color: rgb(53, 2, 77);
+    background-image: linear-gradient(to bottom,rgb(53, 2, 77),rgb(44, 111, 236));
+    border: 5px rgb(48, 2, 66) dotted;
+    border-radius: 15px;
+}
+#img2{
+    height: 200px;
+    background-image: url('img/imaJunior.jpg');
+    background-size: cover;
+    border-radius: 15px;
+    border: 5px rgb(48, 2, 66) dotted;
+}
+#grad2{
+    height: 200px;
+    background-color: rgb(53, 2, 77);
+    background-image: linear-gradient(to top,rgb(53, 2, 77),rgb(44, 111, 236));
+    border: 5px rgb(48, 2, 66) dotted;
+    border-radius: 15px;
+}
+#grad3{
+    height: 200px;
+    background-color: rgb(53, 2, 77);
+    background-image: linear-gradient(to right,rgb(53, 2, 77),rgb(44, 111, 236));
+    border: 5px rgb(48, 2, 66) dotted;
+    border-radius: 15px;
+}
+#img4{
+    height: 200px;
+    background-image: url('img/imagesJunior.jpg');
+    background-size: cover;
+    border-radius: 15px;
+    border: 5px rgb(48, 2, 66) dotted;
+}
+#grad4{
+    height: 200px;
+    background-color: rgb(53, 2, 77);
+    background-image: linear-gradient(to left,rgb(53, 2, 77),rgb(44, 111, 236));
+    border: 5px rgb(48, 2, 66) dotted;
+    border-radius: 15px;
+}
+footer section{
+    color: black;
+    width: 8.6%;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    margin: 10px;
+    padding: 10px;
+    border: 5px rgb(48, 2, 66) dotted;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+}
+footer nav{
+    width: 91.4%;
+    display: flex;
+    flex-direction: row-reverse;
+    float: right;
+    margin: 10px;
+    padding: 10px;
+    border: 5px rgb(48, 2, 66) dotted;
+}
+footer nav #google{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 5%;
+    text-decoration: none;
+    color: black;
+}
+footer nav ol{
+    display: flex;
+    flex-direction: row-reverse;
+    list-style: none;
+    width: 95%;
+
+}
+footer nav ol li{
+    padding-left: 7%;
+}
+footer nav ol li a{
+    color: black;
+    text-decoration: none;
+}
+footer nav ol li a:hover{
+    background-color: rgb(7, 50, 192);
+    color: black;
+    font-size: 16px;
+    border-radius: 5
+    px;
+}
