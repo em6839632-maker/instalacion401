@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    grid-template-rows: 1fr auto auto;
+    grid-template-areas:
+        "menu main"
+        "menu header"
+        "footer footer";
+    min-height: 100vh;
+}
+
+#menu {
+    grid-area: menu;
+    background-color: #000000;
+    border-right: 2px solid #121212;
+    padding: 25px 20px;
+}
+
+#menu h1 {
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #282828;
+    padding-bottom: 8px;
+    color: #1db954;
+}
+
+#menu ol {
+    list-style: none;
+}
+
+#menu li {
+    margin-bottom: 25px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #b3b3b3;
+    font-weight: bold;
+    font-size: 1.05rem;
+    display: block;
+    padding: 10px 12px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+#menu a:hover {
+    color: #1db954;
+    background-color: #282828;
+}
+
+main {
+    grid-area: main;
+    padding: 40px 40px 40px 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #121212;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 80px;
+    width: 100%;
+    max-width: 900px;
+    background-color: transparent;
+    padding: 10px;
+    border: none;
+}
+
+form section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Alineación de los botones de género (Femenino / Masculino) en horizontal */
+form section:nth-child(3) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    color: #b3b3b3;
+}
+
+form section:nth-child(3) label {
+    width: 100%;
+    margin-bottom: 4px;
+}
+
+form section:nth-child(3) input[type="radio"] {
+    accent-color: #1db954;
+    cursor: pointer;
+}
+
+/* Posicionamiento del botón de subir archivo (File) a la derecha */
+form section:nth-child(5) {
+    grid-column: 2;
+    grid-row: 1 / span 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    background-color: transparent;
+    margin-left: auto;
+    width: 100%;
+    max-width: 280px;
+}
+
+/* Botón de envío (Subir) centrado horizontalmente */
+form section:nth-child(6) {
+    grid-column: 1 / span 2;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    color: #1db954;
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    background-color: #282828;
+    border: 1px solid #3e3e3e;
+    color: #ffffff;
+    padding: 10px 12px;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+    width: 100%;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+    border-color: #1db954;
+}
+
+input[type="file"] {
+    color: #1db954;
+    font-size: 0.85rem;
+    width: 100%;
+}
+
+input[type="submit"] {
+    background-color: #1db954;
+    color: #000000;
+    border: none;
+    padding: 12px 40px;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #1ed760;
+    transform: scale(1.02);
+}
+
+header {
+    grid-area: header;
+    text-align: center;
+    padding: 25px 0;
+    border-top: 1px dashed #1db954;
+    background-color: #121212;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #1db954;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #000000;
+    border-top: 2px solid #1db954;
+}
+
+footer h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1db954;
+}

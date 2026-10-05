@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Erika Mendez">
+    <meta keywords="html, etiquetas, arquitectura">
+    <title>Cantante</title>
+    <link rel="stylesheet" href="cantante.css">
+</head>
+
+<body>
+ <aside id="menu">
+                    <h1>Menu</h1>
+                    <nav>
+                    <ol>
+                         <li><a href="index.html">01. Home</a></li>
+                    <li><a href="disco.html">02. Disco</a></li>
+                    <li><a href="cantante.html">03. Cantante</a></li>
+                    <li><a href="cancion.html">04. Cancion</a></li>
+                    <li><a href="playlist.html">05. Playlist</a></li>
+                
+                    </ol>
+                    </nav>
+                </aside>
+    <main>
+
+        <form>
+
+            <section>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+            </section>
+
+            <section>
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad">
+            </section>
+
+            <section>
+                <label> Genero:</label>
+                                    <input type="radio" name="genero" id="genero" value="F"/>Femenino 
+                                    <input type="radio" name="genero" id="genero" value="M"/>Masculino
+            </section>
+
+            <section>
+                <label> Trayectoria:</label>
+                                <select id="trayectoria" aria-placeholder="Seleccionar Trayectoria">
+                                    <option value="1">1 a 5 años</option>
+                                    <option value="2">6 a 10 años</option>
+                                    <option value="3">11 a 50 años</option>
+                                </select>
+                                
+            </section>
+            <section>
+                <label>Foto:</label>
+                    <input type="file" id="foto">
+            </section>
+
+            <section>
+                <input type="submit" value="Subir">
+            </section>
+
+        </form>
+
+    </main>
+    <header>
+        <h1>Cantante</h1>
+    </header>
+    <footer>
+        <article><h3>LSDM401 </h3> </article>
+        <article><h3>Erika Mendez</h3></article>
+    </footer>
+
+</body>
+</html>
