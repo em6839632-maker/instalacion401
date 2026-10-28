@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de Arreglos</title>
+</head>
+<body>
+    <section style="margin-bottom: 40px;">
+        <div>
+            <article class="col-sm-4">
+                <h3>Numero de muertes en 7 dias</h3>        
+                <button class="btn btn-warning" onclick="cargar()">Capturar cantidad</button>
+                <button class="btn btn-success" onclick="mostrar()">Mostrar cantidad de muertos</button>
+                <p id="promedio"></p>
+            </article>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="container mt_5">
+        <h3>Calculo de sueldo</h3>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Newbar</th>
+                    <th>Jr</th>
+                    <th>Sr</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Diseñador</td>
+                    <td>120</td>
+                    <td>120</td>
+                    <td>240</td>
+                </tr>
+                <tr>
+                    <td>Programador</td>
+                    <td>180</td>
+                    <td>280</td>
+                    <td>520</td>
+                </tr>
+                <tr>
+                    <td>Lider</td>
+                    <td>240</td>
+                    <td>340</td>
+                    <td>890</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <form action="#">
+            <label>Puesto</label>
+            <select id="puesto" class="form-control">
+                <option value="0">Diseñador</option>
+                <option value="1">Programador</option>
+                <option value="2">Líder</option>
+            </select>
+            <br>
+            <label>Nivel</label>
+            <select id="nivel" class="form-control">
+                <option value="0">Nivel 1</option>
+                <option value="1">Nivel 2</option>
+                <option value="2">Nivel 3</option>
+            </select>
+            <br>
+            <label>Horas trabajadas</label>
+            <input type="number" id="hrs" class="form-control">
+            <br>
+            <button type="button" class="btn btn-outline-info" onclick="calcularSueldo()">
+                Calcular sueldo
+            </button>
+        </form>
+    </section>
+
+    <hr>
+
+    <section>
+        <div>
+            <article class="col-sm-4">
+                <h3>Agenda de Eventos</h3>
+                <label>Día:</label>
+                <select id="dia">
+                    <option value="0">Lunes</option>
+                    <option value="1">Martes</option>
+                    <option value="2">Miércoles</option>
+                    <option value="3">Jueves</option>
+                    <option value="4">Viernes</option>
+                    <option value="5">Sábado</option>
+                    <option value="6">Domingo</option>
+                </select><br><br>
+
+                <label>Horas:</label>
+                <input type="text" id="hora" placeholder="Ej: 5:00 pm"><br><br>
+
+                <label>Eventos:</label>
+                <input type="text" id="evento" placeholder="Ej: Dentista"><br><br>
+
+                <label>Descripciónes:</label>
+                <input type="text" id="descripcion" placeholder="Ej: Saca diente"><br><br>
+
+                <button class="btn btn-warning" onclick="guardarAgenda()">Guardar Evento</button>
+                
+                <br><br>
+                <h3>Mi Agenda Registrada</h3>
+                <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%; text-align: left;">
+                    <thead>
+                        <tr style="background-color: #f2f2f2;">
+                            <th>Día</th>
+                            <th>Hr</th>
+                            <th>Evento</th>
+                            <th>Desc.</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Lunes</strong></td>
+                            <td id="hora0">-</td>
+                            <td id="evento0">-</td>
+                            <td id="descripcion0">-</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Martes</strong></td>
+                            <td id="hora1">-</td>
+                            <td id="evento1">-</td>
+                            <td id="descripcion1">-</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Miércoles</strong></td>
+                            <td id="hora2">-</td>
+                            <td id="evento2">-</td>
+                            <td id="descripcion2">-</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Jueves</strong></td>
+                            <td id="hora3">-</td>
+                            <td id="evento3">-</td>
+                            <td id="descripcion3">-</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Viernes</strong></td>
+                            <td id="hora4">-</td>
+                            <td id="evento4">-</td>
+                            <td id="descripcion4">-</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sábado</strong></td>
+                            <td id="hora5">-</td>
+                            <td id="evento5">-</td>
+                            <td id="descripcion5">-</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Domingo</strong></td>
+                            <td id="hora6">-</td>
+                            <td id="evento6">-</td>
+                            <td id="descripcion6">-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </div>
+    </section>
+
+    <script src="arreglo.js"></script>
+</body>
+</html>
