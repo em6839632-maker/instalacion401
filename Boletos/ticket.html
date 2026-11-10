@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ticket de Consumo</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <section class="card">
+        <h2>Akron</h2>
+        <h3>Leon VS Chivas</h3>
+
+        <p class="linea-detalle"><strong>Cliente:</strong> <span id="salidaCliente">---</span></p>
+        <hr class="mi_linea">
+        <p class="linea-detalle"><strong>RFC:</strong> <span id="salidaRFC">---</span></p>
+        <hr class="mi_linea">
+
+        <h3>Boletos Sol</h3>
+        <ul id="listaSol"></ul>
+
+        <h3>Boletos Sombra</h3>
+        <ul id="listaSombra"></ul>
+
+        <article class="linea-detalle">
+            <span>Subtotal:</span>
+            <span id="salidaSubtotal"></span>
+        </article>
+        <article class="linea-detalle">
+            <span>IVA (16%):</span>
+            <span id="salidaIVA"></span>
+        </article>
+        <article class="linea-detalle total-destacado">
+            <span>Total a pagar:</span>
+            <span id="salidaTotal"></span>
+        </article>
+    </section>
+
+    <script src="js/ticket.js"></script>
+</body>
+</html>

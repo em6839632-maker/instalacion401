@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Akron - Registro de Boletos en línea</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <section class="card">
+        <h2>Compra de Boletos</h2>
+
+        <label for="rfc">RFC:</label>
+        <input type="text" id="rfc" placeholder="Ej. ABC123456">
+
+        <label for="cliente">Nombre del cliente:</label>
+        <input type="text" id="cliente" placeholder="Ej. Julieta Sanchez">
+
+        <label for="zona">Zona:</label>
+        <select id="zona">
+            <option value="sol">Sol</option>
+            <option value="sombra">Sombra</option>
+        </select>
+
+        <label for="ninos">Seleccione cuantos niños:</label>
+        <input type="number" id="ninos" min="1" value="2">
+        <button type="button" onclick="agregarBoletos('nino')">+ Añadir</button>
+
+        <label for="adultos">Seleccione cuantos adultos:</label>
+        <input type="number" id="adultos" min="1" value="2">
+        <button type="button" onclick="agregarBoletos('adulto')">+ Añadir</button>
+
+        <hr class="mi_linea">
+
+        <h3>Boletos agregados:</h3>
+        <ul id="listaBoletos"></ul>
+
+        <button type="button" onclick="procesarEnviar()">Calcular y Generar Ticket</button>
+    </section>
+
+    <script src="js/funciones.js"></script>
+</body>
+</html>

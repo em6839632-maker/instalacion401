@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    background-color: #f7f2eb; 
+    color: #382417;          
+    padding: 30px 16px;
+    line-height: 1.5;
+}
+h2 {
+    color: #c45b1f; 
+    font-size: 22px;
+    margin-bottom: 18px;
+    text-align: center;
+}
+h3 {
+    color: #8c431d;
+    font-size: 16px;
+    margin: 18px 0 10px 0;
+}
+
+label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    color: #5c3822;
+    margin-bottom: 6px;
+}
+input[type="text"], select {
+    width: 50%;
+    padding: 10px 12px;
+    border: 1px solid #d9c4b0;
+    background-color: #fdfbf7;
+    border-radius: 6px;
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 14px;
+    color: #382417;
+    margin-bottom: 14px;
+    outline: none;
+
+}
+
+.grupo-inline {
+    display: flex;
+    gap: 8px;
+}
+.grupo-inline select {
+    flex: 3;
+}
+
+button {
+    border: none;
+    border-radius: 6px;
+    font-family: Tahoma, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-secundario {
+    background-color: #8c431d;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 13px;
+    height: 40px;
+}
+.btn-secundario:hover {
+    background-color: #6e3314;
+}
+.btn-primario {
+    width: 50%;
+    background-color: #d96b27; 
+    color: #ffffff;
+    padding: 12px;
+    font-size: 15px;
+    margin-top: 14px;
+}
+.btn-primario:hover {
+    background-color: #b85417;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0 16px 0;
+}
+li {
+    font-size: 13px;
+    color: #5c3822;
+    background-color: #faf4ed;
+    border-left: 4px solid #d96b27;
+    padding: 8px 12px;
+    margin-bottom: 6px;
+    border-radius: 0 6px 6px 0;
+}
+.linea-detalle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #5c3822;
+}
+.total-destacado {
+    font-size: 18px;
+    font-weight: bold;
+    color: #8c431d;
+    border-top: 2px dashed #d9c4b0;
+    padding-top: 12px;
+    margin-top: 12px;
+}
+.mi_linea{
+    margin: 12px 0; 
+    border: none; 
+    border-top: 1px solid #e5e7eb;
+}
